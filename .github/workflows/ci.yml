@@ -22,6 +22,25 @@ jobs:
         run: pnpm install || echo "Install failed"
       - name: Build
         run: pnpm run build || echo "Build failed"
+        deploy:
+          environment:
+            name: github-pages
+            #  url: ${{steps.deployment.outputs.page_url}}
+            runs-on: ubuntu-latest
+            steps:
+            - name: Setup Pages
+              uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # 5.0.0
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # 3.0.1
+              with:
+                # Upload dist repository
+                path: .
+            - name: Deploy
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # 4.0.0
+              with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              publish_dir: ./public
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
