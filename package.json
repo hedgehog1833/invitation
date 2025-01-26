@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "prepare": "husky",
     "predeploy": "tsc -b && vite build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "tsc -b && vite build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
