@@ -9,7 +9,7 @@
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepare": "husky",
-    "predeploy": "pnpm build",
+    "predeploy": "tsc -b && vite build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
