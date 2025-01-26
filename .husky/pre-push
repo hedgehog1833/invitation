@@ -1,0 +1,3 @@
+pnpm lint
+pnpm tsc -b --noEmit
+
