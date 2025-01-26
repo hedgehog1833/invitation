@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "prepare": "husky",
     "predeploy": "pnpm build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --nojekyll"
   },
   "dependencies": {
     "react": "^19.0.0",
