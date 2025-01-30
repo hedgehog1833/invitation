@@ -1,4 +1,4 @@
 export enum Path {
   AuthPage = "",
-  MainPage = "wir-heiraten",
+  MainPage = "/wir-heiraten",
 }
