@@ -2,18 +2,18 @@ import { createContext } from "react";
 
 export interface AuthContextProps {
   isLoggedIn: boolean;
-  doLogin: (userName: string, contractPassword: string) => void;
+  doLogin: (passowrd: string) => boolean;
   doLogout: () => void;
   resetErrorMessage: () => void;
-  errorMessage: string | undefined;
+  errorMessage: boolean;
 }
 
 export const AuthContext = createContext<AuthContextProps>({
   isLoggedIn: false,
   doLogin: () => {
-    return;
+    return false;
   },
   doLogout: () => undefined,
   resetErrorMessage: () => undefined,
-  errorMessage: undefined,
+  errorMessage: false,
 });
