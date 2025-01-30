@@ -1,4 +1,3 @@
-import "./App.css";
 import { HashRouter } from "react-router-dom";
 import Routes from "./Router/Routes";
 import AuthProvider from "./Context/AuthProvider";

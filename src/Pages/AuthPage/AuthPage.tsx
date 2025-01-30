@@ -1,11 +1,21 @@
 import LoginForm from "../../Forms/LoginForm";
+import Layout from "../../Layout";
+
+import styles from "./AuthPage.module.scss";
 
 const AuthPage = () => {
   return (
-    <div>
-      Hallo I bims ein Page
-      <LoginForm />
-    </div>
+    <Layout>
+      <div className={styles.authPageContainer}>
+        <div className={styles.headerWrapper}>
+          <h1>Login</h1>
+          <p>
+            Du findest das Passwort auf deiner Eintrittskarte über dem QR-Code
+          </p>
+        </div>
+        <LoginForm />
+      </div>
+    </Layout>
   );
 };
 

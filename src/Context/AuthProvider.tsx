@@ -8,24 +8,24 @@ interface AuthProviderProps {
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [errorMessage, setErrorMessage] = useState<string | undefined>(
-    undefined
-  );
+  const [errorMessage, setErrorMessage] = useState(false);
+
   const login = (contractPassword: string) => {
-    if (!verifyPassword(contractPassword)) {
-      setErrorMessage("Please enter the right credentials");
-      throw new Error();
-    } else {
-      setErrorMessage(undefined);
+    if (verifyPassword(contractPassword)) {
       setIsLoggedIn(true);
+      setErrorMessage(false);
+      return true;
     }
+    setErrorMessage(true);
+    return false;
   };
+
   const logout = () => {
     setIsLoggedIn(false);
   };
 
   const resetErrorMessage = () => {
-    setErrorMessage(undefined);
+    setErrorMessage(false);
   };
 
   return (
