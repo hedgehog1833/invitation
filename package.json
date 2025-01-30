@@ -1,6 +1,7 @@
 {
   "name": "invitation-react",
   "version": "0.0.0",
+  "homepage": "https://hedgehog1833.github.io/invitation/",
   "type": "module",
   "scripts": {
     "dev": "vite",
