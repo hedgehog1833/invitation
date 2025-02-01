@@ -1,4 +1,5 @@
 import styles from "./Header.module.scss";
+import headerImage from "src/assets/header.png";
 interface HeaderProps {
   showImages?: boolean;
   headerText?: string;
@@ -10,7 +11,7 @@ const Header = ({ showImages, headerText }: HeaderProps) => {
       <div className={styles.header}>
         <img
           className={styles.headerLogo}
-          src="/header.png"
+          src={headerImage}
           alt="Wir heiraten"
         />
       </div>
