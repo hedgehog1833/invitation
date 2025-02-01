@@ -1,10 +1,23 @@
+.menuWrapper {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .tabsList {
   width: inherit;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
 }
 
 .tabsContent {
-  width: inherit;
+  background-color: rgb(252, 252, 252);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.trigger {
+  width: 7.54rem;
+  background-color: rgb(31, 31, 31);
 }

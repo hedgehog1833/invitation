@@ -1,13 +1,29 @@
+.headerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 14.5rem;
+  width: 100%;
+  background-color: rgba(6, 6, 6, 0.601);
+}
+
 .header {
   height: 8rem;
-  width: 100%;
+  margin-top: 16px;
+  width: 90%;
   background-image: url("src/Components/Header/assets/theme.png");
-  border-radius: 8px;
+  border-radius: 4px;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  img {
-    height: 3rem;
-  }
+}
+
+.headerText {
+  height: 3rem;
+}
+.headerImage {
+  position: absolute;
+  top: 7rem;
 }

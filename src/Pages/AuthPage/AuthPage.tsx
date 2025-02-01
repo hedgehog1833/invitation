@@ -1,5 +1,5 @@
 import LoginForm from "../../Forms/LoginForm";
-import Layout from "../../Layout";
+import Layout from "../../MainLayout";
 
 import styles from "./AuthPage.module.scss";
 

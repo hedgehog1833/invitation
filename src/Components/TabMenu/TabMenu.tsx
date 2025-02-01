@@ -5,11 +5,17 @@ import Accomodation from "../Accomodation";
 import AboutUs from "../AboutUs";
 const TabMenu = () => {
   return (
-    <Tabs.Root defaultValue="time-table">
+    <Tabs.Root className={styles.menuWrapper} defaultValue="time-table">
       <Tabs.List className={styles.tabsList} aria-label="Tab-Menü">
-        <Tabs.Trigger value="time-table">Time Table</Tabs.Trigger>
-        <Tabs.Trigger value="about-us">Über uns</Tabs.Trigger>
-        <Tabs.Trigger value="accomodation">Unterkunft</Tabs.Trigger>
+        <Tabs.Trigger className={styles.trigger} value="time-table">
+          Timetable
+        </Tabs.Trigger>
+        <Tabs.Trigger className={styles.trigger} value="about-us">
+          Das Team
+        </Tabs.Trigger>
+        <Tabs.Trigger className={styles.trigger} value="accomodation">
+          Unterkunft
+        </Tabs.Trigger>
       </Tabs.List>
       <Tabs.Content className={styles.tabsContent} value="time-table">
         <TimeTable />
