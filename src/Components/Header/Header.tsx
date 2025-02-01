@@ -10,7 +10,7 @@ const Header = ({ showImages, headerText }: HeaderProps) => {
       <div className={styles.header}>
         <img
           className={styles.headerLogo}
-          src="src/Components/Header/assets/header.png"
+          src="/assets/header.png"
           alt="Wir heiraten"
         />
       </div>
@@ -18,12 +18,12 @@ const Header = ({ showImages, headerText }: HeaderProps) => {
         <div className={styles.headerImage}>
           <img
             className={styles.headerImageLeft}
-            src="src/Components/Header/assets/drinking-p.png"
+            src="/assets/drinking-p.png"
             alt="Frau trinkt aufgeschlitztes Dosenbier"
           />
           <img
             className={styles.headerImageRight}
-            src="src/Components/Header/assets/drinking-n.png"
+            src="/assets/drinking-n.png"
             alt="Mann in Kutte hält Dosenbier"
           />
         </div>
