@@ -4,12 +4,13 @@ import styles from "./MainLayout.module.scss";
 
 interface MainLayoutProps extends PropsWithChildren {
   showImages?: boolean;
+  headerText?: string;
 }
-const MainLayout = ({ showImages, children }: MainLayoutProps) => {
+const MainLayout = ({ showImages, headerText, children }: MainLayoutProps) => {
   return (
     <div className={styles.layout}>
-      <Header showImages={showImages} />
-      {children}
+      <Header showImages={showImages} headerText={headerText} />
+      <div className={styles.childrenLayout}>{children}</div>
     </div>
   );
 };

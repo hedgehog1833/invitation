@@ -1,14 +1,15 @@
 import styles from "./Header.module.scss";
 interface HeaderProps {
   showImages?: boolean;
+  headerText?: string;
 }
 
-const Header = ({ showImages }: HeaderProps) => {
+const Header = ({ showImages, headerText }: HeaderProps) => {
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.header}>
         <img
-          className={styles.headerText}
+          className={styles.headerLogo}
           src="src/Components/Header/assets/header.png"
           alt="Wir heiraten"
         />
@@ -27,6 +28,7 @@ const Header = ({ showImages }: HeaderProps) => {
           />
         </div>
       )}
+      {headerText && <h1>{headerText}</h1>}
     </div>
   );
 };
