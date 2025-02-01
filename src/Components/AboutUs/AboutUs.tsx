@@ -1,12 +1,12 @@
-import TabLayout from "../TabLayout";
+import ContentLayout from "../ContentLayout";
 import styles from "./AboutUs.module.scss";
 const AboutUs = () => {
   return (
-    <TabLayout>
+    <ContentLayout>
       <div className={styles.aboutUs}>
         <h1>Katzenbilder!!!</h1>
       </div>
-    </TabLayout>
+    </ContentLayout>
   );
 };
 

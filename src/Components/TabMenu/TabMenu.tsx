@@ -5,7 +5,7 @@ import Accomodation from "../Accomodation";
 import AboutUs from "../AboutUs";
 const TabMenu = () => {
   return (
-    <Tabs.Root className={styles.menuWrapper} defaultValue="time-table">
+    <Tabs.Root className={styles.tabsWrapper} defaultValue="time-table">
       <Tabs.List className={styles.tabsList} aria-label="Tab-Menü">
         <Tabs.Trigger className={styles.trigger} value="time-table">
           Timetable

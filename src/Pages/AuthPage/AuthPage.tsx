@@ -1,21 +1,21 @@
+import ContentLayout from "../../Components/ContentLayout";
 import LoginForm from "../../Forms/LoginForm";
-import Layout from "../../MainLayout";
+import MainLayout from "../../MainLayout";
 
 import styles from "./AuthPage.module.scss";
 
 const AuthPage = () => {
   return (
-    <Layout>
-      <div className={styles.authPageContainer}>
+    <MainLayout headerText="Login">
+      <ContentLayout>
         <div className={styles.headerWrapper}>
-          <h1>Login</h1>
           <p>
             Du findest das Passwort auf deiner Eintrittskarte über dem QR-Code
           </p>
         </div>
         <LoginForm />
-      </div>
-    </Layout>
+      </ContentLayout>
+    </MainLayout>
   );
 };
 

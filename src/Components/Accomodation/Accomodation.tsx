@@ -1,13 +1,13 @@
-import TabLayout from "../TabLayout";
+import ContentLayout from "../ContentLayout";
 import styles from "./Accomodation.module.scss";
 
 const Accomodation = () => {
   return (
-    <TabLayout>
+    <ContentLayout>
       <div className={styles.accomodation}>
         <h1>Unterkunft</h1>
       </div>
-    </TabLayout>
+    </ContentLayout>
   );
 };
 

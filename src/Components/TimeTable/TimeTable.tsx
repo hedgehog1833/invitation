@@ -1,14 +1,19 @@
-import TabLayout from "../TabLayout";
+import { timeTableContent } from "../../content/content";
+import ContentLayout from "../ContentLayout";
 
-const TimeTable = () => {
+const TimeContentle = () => {
   return (
-    <TabLayout>
-      <h1>Location</h1>
-      <p>Hammesmühle</p>
-      <h1>Start</h1>
-      <p>15:00 Die Trauung findet vorher im engen familiären Kreis statt.</p>
-    </TabLayout>
+    <ContentLayout>
+      {timeTableContent.map((content) => (
+        <div>
+          <h1>{content.header}</h1>
+          {content.content.map((text) => (
+            <p>{text}</p>
+          ))}
+        </div>
+      ))}
+    </ContentLayout>
   );
 };
 
-export default TimeTable;
+export default TimeContentle;
