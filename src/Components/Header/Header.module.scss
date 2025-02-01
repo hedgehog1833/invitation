@@ -1,13 +1,13 @@
 .header {
   height: 8rem;
   width: 100%;
-  background-image: url("./assets/theme.png");
+  background-image: url("src/Components/Header/assets/theme.png");
   border-radius: 8px;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  h1 {
-    color: black;
+  img {
+    height: 3rem;
   }
 }
