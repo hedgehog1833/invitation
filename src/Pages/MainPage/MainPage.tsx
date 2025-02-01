@@ -1,11 +1,11 @@
 import TabMenu from "../../Components/TabMenu";
-import Layout from "../../Layout";
+import MainLayout from "../../MainLayout";
 
 const MainPage = () => {
   return (
-    <Layout>
+    <MainLayout showImages>
       <TabMenu />
-    </Layout>
+    </MainLayout>
   );
 };
 export default MainPage;
