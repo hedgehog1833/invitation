@@ -18,12 +18,12 @@ const Header = ({ showImages, headerText }: HeaderProps) => {
         <div className={styles.headerImage}>
           <img
             className={styles.headerImageLeft}
-            src="/assets/drinking-p.png"
+            src="public/assets/drinking-p.png"
             alt="Frau trinkt aufgeschlitztes Dosenbier"
           />
           <img
             className={styles.headerImageRight}
-            src="/assets/drinking-n.png"
+            src="public/assets/drinking-n.png"
             alt="Mann in Kutte hält Dosenbier"
           />
         </div>
