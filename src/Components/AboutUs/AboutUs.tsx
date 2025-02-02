@@ -1,11 +1,17 @@
 import ContentLayout from "../ContentLayout";
-import styles from "./AboutUs.module.scss";
+import {aboutUsContent} from "../../content/content.ts";
+
 const AboutUs = () => {
   return (
     <ContentLayout>
-      <div className={styles.aboutUs}>
-        <h1>Katzenbilder!!!</h1>
-      </div>
+        {aboutUsContent.map((content) => (
+            <div>
+                <h1>{content.header}</h1>
+                {content.content.map((text) => (
+                    <p>{text}</p>
+                ))}
+            </div>
+        ))}
     </ContentLayout>
   );
 };

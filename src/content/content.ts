@@ -14,6 +14,12 @@ export const timeTableContent: Content[] = [
 
 export const accommodationContent: Content[] = [
   { header: "Unterkunft",
-    content: [" Sprecht uns an! Es gibt ein paar kleinere Hotels oder auch Ferienwohnungen in der Gegend, wir finden was!"]
+    content: ["Sprecht uns an! Es gibt ein paar kleinere Hotels oder auch Ferienwohnungen in der Gegend, wir finden was!"]
+  },
+];
+
+export const aboutUsContent: Content[] = [
+  { header: "Katzenbilder!!!",
+    content: [""]
   },
 ];
