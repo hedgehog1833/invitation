@@ -1,5 +1,8 @@
 import styles from "./Header.module.scss";
 import headerImage from "../../assets/header.png";
+import drinkingP from "../../assets/drinking-p.png";
+import drinkingN from "../../assets/drinking-n.png";
+
 interface HeaderProps {
   showImages?: boolean;
   headerText?: string;
@@ -19,12 +22,12 @@ const Header = ({ showImages, headerText }: HeaderProps) => {
         <div className={styles.headerImage}>
           <img
             className={styles.headerImageLeft}
-            src="/drinking-p.png"
+            src={drinkingP}
             alt="Frau trinkt aufgeschlitztes Dosenbier"
           />
           <img
             className={styles.headerImageRight}
-            src="/drinking-n.png"
+            src={drinkingN}
             alt="Mann in Kutte hält Dosenbier"
           />
         </div>
