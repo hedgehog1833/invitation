@@ -1,10 +1,10 @@
 import ContentLayout from "../ContentLayout";
-import {aboutUsContent} from "../../content/content.ts";
+import {accommodationContent} from "../../content/content.ts";
 
-const AboutUs = () => {
+const Accommodation = () => {
   return (
     <ContentLayout>
-        {aboutUsContent.map((content) => (
+        {accommodationContent.map((content) => (
             <div>
                 <h1>{content.header}</h1>
                 {content.content.map((text) => (
@@ -16,4 +16,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Accommodation;
