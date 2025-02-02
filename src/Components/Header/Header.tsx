@@ -18,21 +18,23 @@ const Header = ({ showImages, headerText }: HeaderProps) => {
           alt="Wir heiraten"
         />
       </div>
-      {showImages && (
-        <div className={styles.headerImage}>
-          <img
-            className={styles.headerImageLeft}
-            src={drinkingP}
-            alt="Frau trinkt aufgeschlitztes Dosenbier"
-          />
-          <img
-            className={styles.headerImageRight}
-            src={drinkingN}
-            alt="Mann in Kutte hält Dosenbier"
-          />
-        </div>
-      )}
-      {headerText && <h1>{headerText}</h1>}
+      <div className={styles.imageAndTextContainer}>
+        {showImages && (
+          <div className={styles.headerImage}>
+            <img
+              className={styles.headerImageLeft}
+              src={drinkingP}
+              alt="Frau trinkt aufgeschlitztes Dosenbier"
+            />
+            <img
+              className={styles.headerImageRight}
+              src={drinkingN}
+              alt="Mann in Kutte hält Dosenbier"
+            />
+          </div>
+        )}
+        {headerText && <h1>{headerText}</h1>}
+      </div>
     </div>
   );
 };
