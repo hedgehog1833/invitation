@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-import headerImage from "../..header.png";
+import headerImage from "../../assets/header.png";
 interface HeaderProps {
   showImages?: boolean;
   headerText?: string;
