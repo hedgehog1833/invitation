@@ -1,11 +1,16 @@
 .contentLayout {
-  background-color: rgb(252, 252, 252);
+  background-image: linear-gradient(
+    to right,
+    rgb(223, 184, 180) 0%,
+    rgb(136, 202, 226) 80%
+  );
   border-radius: 4px;
   padding: 16px;
   color: black;
   height: fit-content;
   box-sizing: border-box;
   margin-bottom: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 
   h1 {
     font-size: 1.5rem;

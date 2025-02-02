@@ -11,7 +11,7 @@ const TabMenu = () => {
           Timetable
         </Tabs.Trigger>
         <Tabs.Trigger className={styles.trigger} value="about-us">
-          Das Team
+          Team
         </Tabs.Trigger>
         <Tabs.Trigger className={styles.trigger} value="accomodation">
           Unterkunft
