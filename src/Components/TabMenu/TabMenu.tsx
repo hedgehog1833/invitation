@@ -1,7 +1,7 @@
 import * as Tabs from "@radix-ui/react-tabs";
 import styles from "./TabMenu.module.scss";
 import TimeTable from "../TimeTable";
-import Accomodation from "../Accomodation";
+import Accommodation from "../Accomodation";
 import AboutUs from "../AboutUs";
 const TabMenu = () => {
   return (
@@ -24,7 +24,7 @@ const TabMenu = () => {
         <AboutUs />
       </Tabs.Content>
       <Tabs.Content className={styles.tabsContent} value="accomodation">
-        <Accomodation />
+        <Accommodation />
       </Tabs.Content>
     </Tabs.Root>
   );
