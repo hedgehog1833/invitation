@@ -3,7 +3,7 @@ import ContentLayout from "../ContentLayout";
 
 const TimeContentle = () => {
   return (
-    <ContentLayout>
+    <ContentLayout edgesTop>
       {timeTableContent.map((content) => (
         <div>
           <h1>{content.header}</h1>
