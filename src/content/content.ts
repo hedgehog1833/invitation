@@ -20,9 +20,3 @@ export const accommodationContent: Content[] = [
     content: ["Wenn ihr plant, hier zu übernachten, sprecht uns an und wir helfen euch bei der Suche nach eine passenden Unterkunft!"]
   },
 ];
-
-export const aboutUsContent: Content[] = [
-  { header: "Katzenbilder!!!",
-    content: [""]
-  },
-];

@@ -1,0 +1,15 @@
+.catPics {
+  height: 15rem;
+}
+
+.picRow {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.rowWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
