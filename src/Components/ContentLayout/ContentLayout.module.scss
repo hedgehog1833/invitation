@@ -4,7 +4,7 @@
     rgb(223, 184, 180) 0%,
     rgb(136, 202, 226) 80%
   );
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 16px;
   color: black;
   height: fit-content;
@@ -16,4 +16,7 @@
     font-size: 1.5rem;
     font-weight: 600;
   }
+}
+.edgesTop {
+  border-radius: 0 0 8px 8px;
 }

@@ -2,18 +2,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
 }
 
 .tabsList {
+  background-color: rgb(31, 31, 31);
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 8px;
 }
 
 .trigger {
+  all: unset;
+  cursor: pointer;
+  padding: 16px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   color: white;
-  max-width: 7.54rem;
   background-color: rgb(31, 31, 31);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  &:first-child {
+    border-top-left-radius: 8px;
+  }
+  &:last-child {
+    border-top-right-radius: 8px;
+  }
+}
+
+.trigger[data-state="active"] {
+  border-bottom: 3px solid rgb(190, 52, 249);
 }
