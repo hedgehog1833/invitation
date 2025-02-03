@@ -11,39 +11,58 @@ const AboutUs = () => {
   return (
     <ContentLayout edgesTop backgroundColor="rgb(136, 202, 226)">
       <div className={styles.rowWrapper}>
-        <div className={styles.picRow}>
+        <div className={styles.paragraphWrapper}>
+          <h1>Die Trauzeugen</h1>
+          <div className={styles.imageWrapper}>
+            <img
+              className={styles.pic}
+              src={agImage}
+              alt="Hübscher Mann mit schulterlangem dunklen Haar"
+            />
+            <p>Alex Gerardomont</p>
+            <p>Trauzeuge von Nils</p>
+          </div>
+          <div className={styles.imageWrapper}>
+            <img
+              className={styles.pic}
+              src={tkImage}
+              alt="Hübscher Mann mit Glatze und Vollbart"
+            />
+            <p>Tobebe Klêtre</p>
+            <p>Trauzeuge von Paula</p>
+          </div>
+        </div>
+        <div className={styles.paragraphWrapper}>
+          <h1>Das Paar</h1>
           <img
-            className={styles.catPics}
-            src={agImage}
-            alt="Hübscher Mann mit schulterlangem dunklen Haar"
-          />
-          <img
-            className={styles.catPics}
+            className={styles.pic}
             src={pnImage}
             alt="Ein sexy junges Paar an einem Stehtisch"
           />
-          <img
-            className={styles.catPics}
-            src={tkImage}
-            alt="Hübscher Mann mit Glatze und Vollbart"
-          />
         </div>
-        <div className={styles.picRow}>
+        <h1>The Masterminds</h1>
+        <div className={styles.imageWrapper}>
           <img
-            className={styles.catPics}
+            className={styles.pic}
             src={gAndMImage}
             alt="Zwei süße Katzen nebeneinander auf einem Stuhl"
           />
+        </div>
+        <div className={styles.imageWrapper}>
           <img
-            className={styles.catPics}
+            className={styles.pic}
             src={gPoseImage}
             alt="Süße rote Katze die sich putzt"
           />
+          <p>Gaumbert</p>
+        </div>
+        <div className={styles.imageWrapper}>
           <img
-            className={styles.catPics}
+            className={styles.pic}
             src={longMImage}
             alt="Süße braune Katze auf einem Schoß"
           />
+          <p>Matzala</p>
         </div>
       </div>
     </ContentLayout>
