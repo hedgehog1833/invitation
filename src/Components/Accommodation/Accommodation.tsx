@@ -3,7 +3,7 @@ import { accommodationContent } from "../../content/content.ts";
 
 const Accommodation = () => {
   return (
-    <ContentLayout edgesTop>
+    <ContentLayout edgesTop backgroundColor="rgb(212, 180, 223)">
       {accommodationContent.map((content) => (
         <div>
           <h1>{content.header}</h1>

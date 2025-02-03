@@ -1,15 +1,18 @@
-.catPics {
-  height: 15rem;
+.pic {
+  width: 15rem;
+  border-radius: 8px;
 }
 
-.picRow {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
+.imageWrapper {
+  margin-bottom: 24px;
+  p {
+    margin: 0;
+  }
 }
 
 .rowWrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
