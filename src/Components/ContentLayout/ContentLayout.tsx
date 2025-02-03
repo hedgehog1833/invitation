@@ -4,10 +4,20 @@ import clsx from "clsx";
 
 interface ContentLayoutProps extends PropsWithChildren {
   edgesTop?: boolean;
+  backgroundColor: string;
 }
-const ContentLayout = ({ edgesTop, children }: ContentLayoutProps) => {
+const ContentLayout = ({
+  edgesTop,
+  backgroundColor,
+  children,
+}: ContentLayoutProps) => {
   return (
-    <div className={clsx(styles.contentLayout, edgesTop && styles.edgesTop)}>
+    <div
+      style={{
+        backgroundImage: `linear-gradient(to right,${backgroundColor} 0%,rgb(240, 251, 255) 80%)`,
+      }}
+      className={clsx(styles.contentLayout, edgesTop && styles.edgesTop)}
+    >
       {children}
     </div>
   );
