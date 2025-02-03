@@ -3,6 +3,7 @@ import styles from "./TabMenu.module.scss";
 import TimeTable from "../TimeTable";
 import Accommodation from "../Accommodation";
 import AboutUs from "../AboutUs";
+
 const TabMenu = () => {
   return (
     <Tabs.Root className={styles.tabsWrapper} defaultValue="time-table">

@@ -1,7 +1,7 @@
 import { timeTableContent } from "../../content/content";
 import ContentLayout from "../ContentLayout";
 
-const TimeContentle = () => {
+const TimeTable = () => {
   return (
     <ContentLayout edgesTop backgroundColor="rgb(223, 184, 180)">
       {timeTableContent.map((content) => (
@@ -16,4 +16,4 @@ const TimeContentle = () => {
   );
 };
 
-export default TimeContentle;
+export default TimeTable;
