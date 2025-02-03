@@ -17,6 +17,6 @@ export const timeTableContent: Content[] = [
 
 export const accommodationContent: Content[] = [
   { header: "Unterkunft",
-    content: ["Wenn ihr plant, hier zu übernachten, sprecht uns an und wir helfen euch bei der Suche nach eine passenden Unterkunft!"]
+    content: ["Wenn ihr plant, hier zu übernachten, sprecht uns an und wir helfen euch bei der Suche nach einer passenden Unterkunft!"]
   },
 ];
