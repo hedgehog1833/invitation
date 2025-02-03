@@ -20,7 +20,7 @@ const AboutUs = () => {
               alt="Hübscher Mann mit schulterlangem dunklen Haar"
             />
             <p>Alex Gerardomont</p>
-            <p>Trauzeuge von Nils</p>
+            <p>Nils' Trauzeuge</p>
           </div>
           <div className={styles.imageWrapper}>
             <img
@@ -29,7 +29,7 @@ const AboutUs = () => {
               alt="Hübscher Mann mit Glatze und Vollbart"
             />
             <p>Tobebe Klêtre</p>
-            <p>Trauzeuge von Paula</p>
+            <p>Paulas Trauzeuge</p>
           </div>
         </div>
         <div className={styles.paragraphWrapper}>
