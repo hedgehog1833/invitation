@@ -7,7 +7,7 @@ import styles from "./AuthPage.module.scss";
 const AuthPage = () => {
   return (
     <MainLayout headerText="Login">
-      <ContentLayout>
+      <ContentLayout backgroundColor="rgb(180, 223, 195)">
         <div className={styles.headerWrapper}>
           <p>
             Du findest das Passwort auf deiner Eintrittskarte über dem QR-Code
