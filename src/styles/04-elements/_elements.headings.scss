@@ -1,0 +1,36 @@
+@use "../01-settings/settings";
+
+
+p,
+span {
+  color: inherit;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, calc(52 / 16 * settings.$base-font-size));
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 5vw, calc(40 / 16 * settings.$base-font-size));
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: calc(24 / 16 * settings.$base-font-size);
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: calc(18 / 16 * settings.$base-font-size);
+}
+h5 {
+  font-weight: 600;
+}
+h5,
+h6 {
+  font-size: calc(16 / 16 * settings.$base-font-size);
+}

@@ -1,0 +1,11 @@
+@use '../01-settings/settings';
+
+
+body {
+  margin: 0;
+  font-family: settings.$font-body;
+  font-size: settings.$base-font-size;
+  color: settings.$text-black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,5 +1,6 @@
 .layout {
   width: 100vw;
+  font-family: $font-body;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,6 +8,15 @@
   gap: 24px;
   box-sizing: border-box;
   background-color: rgb(71, 71, 71);
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
 }
 
 .childrenLayout {
