@@ -1,0 +1,17 @@
+@use "sass:map";
+@use "sass:string";
+@use "../01-settings/_settings.breakpoints";
+
+@mixin respond-to($breakpoint) {
+    @if map.has-key(settings.$breakpoints, $breakpoint) {
+
+        // Prints a media query based on the value
+        @media #{string.unquote(map.get(settings.$breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "No value could be retrieved from `#{$breakpoint}`. "
+    }
+}

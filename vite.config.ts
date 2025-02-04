@@ -6,6 +6,11 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "",
+  css: {
+    preprocessorOptions: {
+      scss: { additionalData: `@use 'src/styles/main' as *;`, api: "modern" },
+    },
+  },
   server: {
     port: 3000,
   },
