@@ -15,4 +15,21 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+
+  ul {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+}
+
+.rowWrapper:first-child {
+  text-align: center;
 }

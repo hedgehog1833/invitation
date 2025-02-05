@@ -12,6 +12,14 @@ const AboutUs = () => {
     <ContentLayout edgesTop backgroundColor="rgb(136, 202, 226)">
       <div className={styles.rowWrapper}>
         <div className={styles.paragraphWrapper}>
+          <h1>Kontakt</h1>
+          <p>Ihr erreicht uns unter folgenden Nummern:</p>
+          <ul>
+            <li>Paula: 0157-84477390</li>
+            <li>Nils: 0176-61727399</li>
+          </ul>
+        </div>
+        <div className={styles.paragraphWrapper}>
           <h1>Die Trauzeugen</h1>
           <div className={styles.imageWrapper}>
             <img
@@ -40,29 +48,31 @@ const AboutUs = () => {
             alt="Ein sexy junges Paar an einem Stehtisch"
           />
         </div>
-        <h1>The Masterminds</h1>
-        <div className={styles.imageWrapper}>
-          <img
-            className={styles.pic}
-            src={gAndMImage}
-            alt="Zwei süße Katzen nebeneinander auf einem Stuhl"
-          />
-        </div>
-        <div className={styles.imageWrapper}>
-          <img
-            className={styles.pic}
-            src={gPoseImage}
-            alt="Süße rote Katze die sich putzt"
-          />
-          <p>Gaumbert</p>
-        </div>
-        <div className={styles.imageWrapper}>
-          <img
-            className={styles.pic}
-            src={longMImage}
-            alt="Süße braune Katze auf einem Schoß"
-          />
-          <p>Matzala</p>
+        <div className={styles.paragraphWrapper}>
+          <h1>Die Masterminds</h1>
+          <div className={styles.imageWrapper}>
+            <img
+              className={styles.pic}
+              src={gAndMImage}
+              alt="Zwei süße Katzen nebeneinander auf einem Stuhl"
+            />
+          </div>
+          <div className={styles.imageWrapper}>
+            <img
+              className={styles.pic}
+              src={gPoseImage}
+              alt="Süße rote Katze die sich putzt"
+            />
+            <p>Gaumbert</p>
+          </div>
+          <div className={styles.imageWrapper}>
+            <img
+              className={styles.pic}
+              src={longMImage}
+              alt="Süße braune Katze auf einem Schoß"
+            />
+            <p>Matzala</p>
+          </div>
         </div>
       </div>
     </ContentLayout>
