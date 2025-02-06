@@ -3,7 +3,8 @@
   border-radius: 8px;
   padding: 16px;
   color: black;
-  height: fit-content;
+  max-height: 65vh;
+  overflow-y: auto;
   box-sizing: border-box;
   margin-bottom: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);

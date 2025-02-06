@@ -1,17 +1,37 @@
+@use "src/styles/01-settings/settings";
+
 .loginForm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 
   input {
     height: 1.8rem;
     font-size: 1.8rem;
-    border-radius: 4px;
+    border-radius: 8px;
     max-width: 10rem;
   }
 
-  button {
-    background-color: rgb(31, 31, 31);
+  label {
+    font-size: 1.5rem;
   }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    border-radius: 8px;
+    color: $lightest;
+    font-size: 1.3rem;
+    background-color: rgb(31, 31, 31);
+    margin: 1.5rem 0;
+    padding: 6px 12px 3px 12px;
+    &:hover {
+      outline: 1px solid $lightest;
+    }
+  }
+}
+.errorMessage {
+  color: $pink-strong;
+  font-size: 1.5rem;
+  font-weight: 500;
 }

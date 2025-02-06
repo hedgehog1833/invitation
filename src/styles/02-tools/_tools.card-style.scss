@@ -1,7 +1,0 @@
-@use 'src/styles/01-settings/settings';
-
-@mixin card-style {
-  border-radius: 11px;
-  box-shadow: 0 2px 4px 0 rgba(settings.$gray200, 0.5);
-  background-color: settings.$lightest;
-}
