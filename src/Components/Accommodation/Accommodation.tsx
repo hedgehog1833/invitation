@@ -12,8 +12,9 @@ const Accommodation = () => {
           nach, dass wir diese für die Familie reserviert haben.
         </p>
         <p>
-          Wenn ihr plant, hier zu übernachten, sprecht uns an und wir helfen
-          euch bei der Suche nach einer passenden Unterkunft!
+          Wenn ihr plant, nach der Feier in der Gegend zu übernachten, sprecht
+          uns an und wir helfen euch bei der Suche nach einer passenden
+          Unterkunft!
         </p>
         {accommodationContent.map((content, index) => (
           <div key={index}>
