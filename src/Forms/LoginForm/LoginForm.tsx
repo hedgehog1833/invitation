@@ -30,7 +30,9 @@ const LoginForm = () => {
 
       <button type="submit">Abschicken</button>
 
-      {errorMessage && <div>Das Passwort ist falsch</div>}
+      {errorMessage && (
+        <p className={styles.errorText}>Das Passwort ist falsch</p>
+      )}
     </form>
   );
 };

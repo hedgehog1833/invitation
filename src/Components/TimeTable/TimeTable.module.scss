@@ -1,0 +1,11 @@
+.timeTableList {
+  li {
+    all: unset;
+  }
+  li:last-child:last-child {
+    p:last-child {
+      margin-top: 20px;
+      font-weight: 800;
+    }
+  }
+}
