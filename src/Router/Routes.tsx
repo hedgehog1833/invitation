@@ -7,7 +7,7 @@ import MainPage from "../Pages/MainPage";
 
 export const Routes = () => {
   const { isLoggedIn } = useContext(AuthContext);
-  const NavigateToLoginPage = <Navigate to={Path.AuthPage} replace />;
+  const NavigateToLoginPage = <Navigate to={"../"} replace />;
   return (
     <ReactRoutes>
       <Route path={Path.AuthPage} element={<AuthPage />} />
