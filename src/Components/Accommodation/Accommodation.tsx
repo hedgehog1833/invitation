@@ -37,8 +37,8 @@ const Accommodation = () => {
         ))}
         <h2>Camper</h2>
         <p>
-          Direkt an der Location ist ein großer Parkplatz, auf dem auch
-          Anreisende mit Vans oder Wohnmobilen für die Nacht stehen können.
+          Direkt an der Location ist ein großer Parkplatz, auf dem Anreisende
+          auch mit Vans oder Wohnmobilen für die Nacht stehen können.
         </p>
       </div>
     </ContentLayout>
