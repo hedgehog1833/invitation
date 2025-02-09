@@ -51,7 +51,7 @@ export const accommodationContent: AccomodationContent[] = [
         url: "https://www.parkhotel-am-schloss.de/preise-2025.html",
       },
       {
-        title: "Myk Hotel (danke @Daniel!) - Bisschen sus weil echt billig aber so what",
+        title: "Myk Hotel (danke @Daniel!) - Mayen - Bisschen sus weil echt billig, Fahrtzeit ca. 10 Minuten",
         url: "https://www.myk-hotel.de/",
       },
     ],
@@ -60,7 +60,7 @@ export const accommodationContent: AccomodationContent[] = [
     header: "Gehobeneres Hotel",
     links: [
       {
-        title: "Purs - Am Ochsentor - Andernach, Fahrtzeit ca. 10 Minuten",
+        title: "Purs - Am Ochsentor - Andernach, Fahrtzeit ca. 30 Minuten",
         url: "https://purs.com/am-ochsentor/zimmer-am-ochsentor/",
       },
     ],
