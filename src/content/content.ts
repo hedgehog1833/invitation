@@ -50,6 +50,10 @@ export const accommodationContent: AccomodationContent[] = [
         title: "Parkhotel am Schloss - Ettringen, Fahrtzeit ca. 10 Minuten",
         url: "https://www.parkhotel-am-schloss.de/preise-2025.html",
       },
+      {
+        title: "Myk Hotel (danke @Daniel!) - Bisschen sus weil echt billig aber so what",
+        url: "https://www.myk-hotel.de/",
+      },
     ],
   },
   {
